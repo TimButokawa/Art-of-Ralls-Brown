@@ -1,0 +1,27 @@
+.nav-list {
+  transition: height .2s ease;
+  overflow: hidden;
+  height: 0;
+  @media(min-width: 576px) {
+    height: auto !important;
+  }
+  &.open {
+    height: 150px;
+  }
+  &.closed {
+    height: 0;
+  }
+}
+
+.nav-list-item {
+  display: block;
+  padding: 5px 0 0;
+  cursor: pointer;
+  &:last-child {
+    padding-bottom: 5px;
+  }
+  @media(min-width: 576px) {
+    display: inline;
+    padding: 0 15px 0 0;
+  }
+}
