@@ -11,6 +11,7 @@ import {About} from './app/components/about/about';
 import {Cv} from './app/components/cv/cv';
 import {Contact} from './app/components/contact/contact';
 
+import '../node_modules/flexboxgrid/css/flexboxgrid.min.css';
 import './index.scss';
 
 ReactDOM.render(

@@ -29,22 +29,22 @@ export class Nav extends Component {
       <nav>
         <ul className={(this.state.mobileMenuIsOpen ? 'open' : 'closed') + ' nav-list'}>
           <li className="nav-list-item">
-            <Link to="/projects">projects</Link>
+            <Link activeClassName="nav-list-item-active" to="/projects">projects</Link>
           </li>
           <li className="nav-list-item">
-            <Link to="/drawings">drawings</Link>
+            <Link activeClassName="nav-list-item-active" to="/drawings">drawings</Link>
           </li>
           <li className="nav-list-item">
             <a href="http://rawblades.tumblr.com/" target="_blank" rel="noopener noreferrer">blog</a>
           </li>
           <li className="nav-list-item">
-            <Link to="/about">about</Link>
+            <Link activeClassName="nav-list-item-active" to="/about">about</Link>
           </li>
           <li className="nav-list-item">
-            <Link to="/cv">cv</Link>
+            <Link activeClassName="nav-list-item-active" to="/cv">cv</Link>
           </li>
           <li className="nav-list-item">
-            <Link to="/contact">contact</Link>
+            <Link activeClassName="nav-list-item-active" to="/contact">contact</Link>
           </li>
         </ul>
         <i style={mobileMenu} className="material-icons hidden-sml" onClick={this.handleToggleMenu}>menu</i>

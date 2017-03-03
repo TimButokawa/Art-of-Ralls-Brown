@@ -1,0 +1,34 @@
+[
+  {
+    "title": "drawing desk",
+    "image": "app/assets/images/projects/projects-2.jpg"
+  },
+  {
+    "title": "douphonic drawing pod",
+    "image": "app/assets/images/projects/projects-3.jpg"
+  },
+  {
+    "title": "sound/system",
+    "image": "app/assets/images/projects/projects-4.jpg"
+  },
+  {
+    "title": "magical mistakes",
+    "image": "app/assets/images/projects/projects-5.jpg"
+  },
+  {
+    "title": "breath",
+    "image": "app/assets/images/projects/projects-1.jpg"
+  },
+  {
+    "title": "patterncity 001",
+    "image": "app/assets/images/projects/projects-6.jpg"
+  },
+  {
+    "title": "patterncity 002",
+    "image": "app/assets/images/projects/projects-7.jpg"
+  },
+  {
+    "title": "riso",
+    "image": "app/assets/images/projects/projects-9.jpg"
+  }
+]

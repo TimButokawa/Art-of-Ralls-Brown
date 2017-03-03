@@ -3,19 +3,12 @@ import {Nav} from './nav';
 
 const styles = {
   header: {
-    backgroundColor: '#fefefe',
     margin: '1rem',
     position: 'relative'
   },
   title: {
     fontWeight: 500,
     margin: 0
-  },
-  date: {
-    flex: 1,
-    textAlign: 'right',
-    margin: '1rem',
-    color: 'white'
   }
 };
 
