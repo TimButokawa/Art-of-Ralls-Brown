@@ -13,8 +13,9 @@ export class ProjectDescription extends Component {
         <div className="col-xs-12 col-sm-4 sm-room-bottom">
           <div>
             <ul>
-              <li><span style={styles.bold}>Year:</span> {this.props.year}</li>
-              <li><span style={styles.bold}>Medium:</span> {this.props.medium}</li>
+              {this.props.bullets.map((bullet, i) => (
+                <li key={i}><span style={styles.bold}>{bullet.point}:</span> {bullet.description}</li>
+              ))}
             </ul>
           </div>
         </div>
@@ -27,8 +28,7 @@ export class ProjectDescription extends Component {
 }
 
 ProjectDescription.propTypes = {
-  year: React.PropTypes.string.isRequired,
-  medium: React.PropTypes.string.isRequired,
+  bullets: React.PropTypes.arrayOf(React.PropTypes.object).isRequired,
   description: React.PropTypes.oneOfType([
     React.PropTypes.array.isRequired,
     React.PropTypes.string.isRequired
