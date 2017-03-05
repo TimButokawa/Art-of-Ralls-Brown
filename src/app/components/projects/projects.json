@@ -1,34 +1,42 @@
 [
   {
     "title": "drawing desk",
-    "image": "app/assets/images/projects/projects-2.jpg"
+    "image": "app/assets/images/projects/projects-2.jpg",
+    "link": "drawing-desk"
   },
   {
     "title": "douphonic drawing pod",
-    "image": "app/assets/images/projects/projects-3.jpg"
+    "image": "app/assets/images/projects/projects-3.jpg",
+    "link": "drawing-pod"
   },
   {
     "title": "sound/system",
-    "image": "app/assets/images/projects/projects-4.jpg"
+    "image": "app/assets/images/projects/projects-4.jpg",
+    "link": "sound-system"
   },
   {
     "title": "magical mistakes",
-    "image": "app/assets/images/projects/projects-5.jpg"
+    "image": "app/assets/images/projects/projects-5.jpg",
+    "link": "magical-mistakes"
   },
   {
     "title": "breath",
-    "image": "app/assets/images/projects/projects-1.jpg"
+    "image": "app/assets/images/projects/projects-1.jpg",
+    "link": "breath"
   },
   {
     "title": "patterncity 001",
-    "image": "app/assets/images/projects/projects-6.jpg"
+    "image": "app/assets/images/projects/projects-6.jpg",
+    "link": "pattern001"
   },
   {
     "title": "patterncity 002",
-    "image": "app/assets/images/projects/projects-7.jpg"
+    "image": "app/assets/images/projects/projects-7.jpg",
+    "link": "pattern002"
   },
   {
     "title": "riso",
-    "image": "app/assets/images/projects/projects-9.jpg"
+    "image": "app/assets/images/projects/projects-9.jpg",
+    "link": "riso"
   }
 ]

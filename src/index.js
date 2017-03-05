@@ -10,6 +10,7 @@ import {Drawings} from './app/components/drawings/drawings';
 import {About} from './app/components/about/about';
 import {Cv} from './app/components/cv/cv';
 import {Contact} from './app/components/contact/contact';
+import {DrawingDesk} from './app/components/projects/drawing-desk';
 
 import '../node_modules/flexboxgrid/css/flexboxgrid.min.css';
 import './index.scss';
@@ -19,6 +20,7 @@ ReactDOM.render(
     <Route path="/" component={Main}>
       <IndexRoute component={Projects}/>
       <Route path="projects" component={Projects}/>
+      <Route path="drawing-desk" component={DrawingDesk}/>
       <Route path="drawings" component={Drawings}/>
       <Route path="about" component={About}/>
       <Route path="cv" component={Cv}/>

@@ -4,7 +4,7 @@ import {Link} from 'react-router';
 export class Project extends Component {
   render() {
     return (
-      <Link to="/drawings">
+      <Link to={this.props.project.link}>
         <img className="tile-image" src={this.props.project.image}/>
         <span className="tile-title">{this.props.project.title}</span>
       </Link>
