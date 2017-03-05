@@ -3,17 +3,14 @@ import React, {Component} from 'react';
 const styles = {
   bold: {
     fontWeight: 'bold'
-  },
-  margin: {
-    margin: '1rem 0'
   }
 };
 
 export class ProjectDescription extends Component {
   render() {
     return (
-      <div className="row">
-        <div style={styles.margin} className="col-xs-12 col-sm-4">
+      <div className="row room-bottom">
+        <div className="col-xs-12 col-sm-4 sm-room-bottom">
           <div>
             <ul>
               <li><span style={styles.bold}>Year:</span> {this.props.year}</li>
@@ -21,7 +18,7 @@ export class ProjectDescription extends Component {
             </ul>
           </div>
         </div>
-        <div style={styles.margin} className="col-xs-12 col-sm-8">
+        <div className="col-xs-12 col-sm-8">
           <div>{this.props.description}</div>
         </div>
       </div>
@@ -32,5 +29,8 @@ export class ProjectDescription extends Component {
 ProjectDescription.propTypes = {
   year: React.PropTypes.string.isRequired,
   medium: React.PropTypes.string.isRequired,
-  description: React.PropTypes.string.isRequired
+  description: React.PropTypes.oneOfType([
+    React.PropTypes.array.isRequired,
+    React.PropTypes.string.isRequired
+  ])
 };

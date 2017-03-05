@@ -11,3 +11,19 @@
 .margin-none {
   margin: 0;
 }
+
+.room-bottom {
+  margin-bottom: 1rem;
+}
+
+.sm-room-bottom {
+  @media(max-width: 767px) {
+    margin-bottom: 1rem;
+  }
+}
+
+.sm-room-none {
+  @media(max-width: 767px) {
+    margin-bottom: 0;
+  }
+}
