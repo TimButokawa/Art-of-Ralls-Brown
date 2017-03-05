@@ -10,8 +10,8 @@ const mobileMenu = {
 };
 
 export class Nav extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       mobileMenuIsOpen: false
     };

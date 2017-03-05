@@ -4,8 +4,8 @@ import axios from 'axios';
 import {Project} from './project';
 
 export class Projects extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       projects: []
     };
