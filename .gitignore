@@ -5,3 +5,4 @@ node_modules/
 images/
 audio/
 .mp3
+.json
