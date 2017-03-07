@@ -3,14 +3,6 @@ import {ProjectContainer} from './project-container';
 import {ProjectDescription} from './project-description';
 import {IFrameWrapper} from '../../utils/iframe-wrapper';
 
-const styles = {
-  margin: {
-    marginBottom: '1em'
-  },
-  fullWidth: {
-    width: '100%'
-  }
-};
 const bullets = [
   {
     point: 'Contributing Artists',
@@ -37,12 +29,12 @@ export class Breath extends Component {
   render() {
     return (
       <ProjectContainer title="drawing desk">
-        <img style={styles.margin} src="app/assets/images/breath/breath-1.jpg"/>
+        <img className="room-bottom img-responsive" src="app/assets/images/breath/breath-1.jpg"/>
         <ProjectDescription bullets={bullets} description={description}/>
         <IFrameWrapper>
           <iframe src="//www.youtube.com/embed/oU5S5YttxYw?rel=0&amp;modestbranding=1&amp;showinfo=0&amp;controls=0&amp;vq=large" frameBorder="0" allowFullScreen/>
         </IFrameWrapper>
-        <img src="app/assets/images/breath/breath-2.jpg"/>
+        <img className="img-responsive" src="app/assets/images/breath/breath-2.jpg"/>
       </ProjectContainer>
     );
   }

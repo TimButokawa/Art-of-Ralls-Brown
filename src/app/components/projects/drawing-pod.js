@@ -26,7 +26,7 @@ export class DrawingPod extends Component {
         <ProjectDiptych images={diptych.top}/>
         <ProjectDescription bullets={bullets} description={description}/>
         <ProjectDiptych images={diptych.middle}/>
-        <img src="app/assets/images/drawing-pod/pod-5.jpg"/>
+        <img className="img-responsive" src="app/assets/images/drawing-pod/pod-5.jpg"/>
       </ProjectContainer>
     );
   }

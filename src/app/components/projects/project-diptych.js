@@ -6,7 +6,7 @@ export class ProjectDiptych extends Component {
       <div className="row room-bottom sm-room-none">
         {this.props.images.map((image, i) => (
           <div key={i} className="col-sm-6 col-xs-12 sm-room-bottom">
-            <img src={image}/>
+            <img className="img-responsive" src={image}/>
           </div>
         ))}
       </div>

@@ -2,11 +2,6 @@ import React, {Component} from 'react';
 import {ProjectContainer} from './project-container';
 import {ProjectDescription} from './project-description';
 
-const styles = {
-  margin: {
-    marginBottom: '1em'
-  }
-};
 const bullets = [
   {
     point: 'Year',
@@ -31,12 +26,12 @@ export class MagicalMistakes extends Component {
   render() {
     return (
       <ProjectContainer title="magical mistakes">
-        <img style={styles.margin} src="app/assets/images/magical-mistakes/magical-1.jpg"/>
+        <img className="room-bottom img-responsive" src="app/assets/images/magical-mistakes/magical-1.jpg"/>
         <ProjectDescription bullets={bullets} description={description}/>
-        <img style={styles.margin} src="app/assets/images/magical-mistakes/magical-2.jpg"/>
-        <img style={styles.margin} src="app/assets/images/magical-mistakes/magical-3.jpg"/>
-        <img style={styles.margin} src="app/assets/images/magical-mistakes/magical-4.jpg"/>
-        <img src="app/assets/images/magical-mistakes/magical-5.jpg"/>
+        <img className="room-bottom img-responsive" src="app/assets/images/magical-mistakes/magical-2.jpg"/>
+        <img className="room-bottom img-responsive" src="app/assets/images/magical-mistakes/magical-3.jpg"/>
+        <img className="room-bottom img-responsive" src="app/assets/images/magical-mistakes/magical-4.jpg"/>
+        <img className="img-responsive" src="app/assets/images/magical-mistakes/magical-5.jpg"/>
       </ProjectContainer>
     );
   }

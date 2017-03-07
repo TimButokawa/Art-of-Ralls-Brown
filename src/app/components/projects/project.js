@@ -5,7 +5,7 @@ export class Project extends Component {
   render() {
     return (
       <Link to={this.props.project.link}>
-        <img className="tile-image" src={this.props.project.image}/>
+        <img className="img-responsive tile-image" src={this.props.project.image}/>
         <span className="tile-title">{this.props.project.title}</span>
       </Link>
     );

@@ -2,14 +2,6 @@ import React, {Component} from 'react';
 import {ProjectContainer} from './project-container';
 import {ProjectDescription} from './project-description';
 
-const styles = {
-  margin: {
-    marginBottom: '1em'
-  },
-  fullWidth: {
-    width: '100%'
-  }
-};
 const bullets = [
   {
     point: 'Year',
@@ -26,15 +18,15 @@ export class DrawingDesk extends Component {
   render() {
     return (
       <ProjectContainer title="drawing desk">
-        <img style={styles.margin} src="app/assets/images/drawing-desk/drawing-desk-4.jpg"/>
-        <audio style={styles.fullWidth} controls>
+        <img className="room-bottom img-responsive" src="app/assets/images/drawing-desk/drawing-desk-4.jpg"/>
+        <audio className="full-width room-bottom" controls>
           <source src="app/assets/audio/drawing-desk.mp3" type="audio/mpeg"/>
         </audio>
         <ProjectDescription bullets={bullets} description={description}/>
-        <img style={styles.margin} src="app/assets/images/drawing-desk/drawing-desk-1.jpg"/>
-        <img style={styles.margin} src="app/assets/images/drawing-desk/drawing-desk-2.jpg"/>
-        <img style={styles.margin} src="app/assets/images/drawing-desk/drawing-desk-3.jpg"/>
-        <img src="app/assets/images/drawing-desk/drawing-desk-4.jpg"/>
+        <img className="room-bottom img-responsive" src="app/assets/images/drawing-desk/drawing-desk-1.jpg"/>
+        <img className="room-bottom img-responsive" src="app/assets/images/drawing-desk/drawing-desk-2.jpg"/>
+        <img className="room-bottom img-responsive" src="app/assets/images/drawing-desk/drawing-desk-3.jpg"/>
+        <img className="img-responsive" src="app/assets/images/drawing-desk/drawing-desk-4.jpg"/>
       </ProjectContainer>
     );
   }
