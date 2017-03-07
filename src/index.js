@@ -15,6 +15,7 @@ import {DrawingPod} from './app/components/projects/drawing-pod';
 import {SoundSystem} from './app/components/projects/sound-system';
 import {MagicalMistakes} from './app/components/projects/magical-mistakes';
 import {Breath} from './app/components/projects/breath';
+import {PatternOne} from './app/components/projects/pattern-one';
 
 import '../node_modules/flexboxgrid/css/flexboxgrid.min.css';
 import './index.scss';
@@ -29,6 +30,7 @@ ReactDOM.render(
       <Route path="sound-system" component={SoundSystem}/>
       <Route path="magical-mistakes" component={MagicalMistakes}/>
       <Route path="breath" component={Breath}/>
+      <Route path="pattern001" component={PatternOne}/>
       <Route path="drawings" component={Drawings}/>
       <Route path="about" component={About}/>
       <Route path="cv" component={Cv}/>
