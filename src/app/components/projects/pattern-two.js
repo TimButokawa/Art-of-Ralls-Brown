@@ -8,7 +8,7 @@ import {ProjectGallery} from './project-gallery';
 const bullets = [
   {
     point: 'Year',
-    description: '2012'
+    description: '2013'
   },
   {
     point: 'Medium',
@@ -16,7 +16,7 @@ const bullets = [
   },
   {
     point: 'Panel Sizes',
-    description: '13 x 13 x 2 inches'
+    description: '15 x 15 x 2 inches'
   }
 ];
 const description = [
@@ -24,7 +24,7 @@ const description = [
   <p key={1}>Taking components from these various forms of logic and playing with them is both my attempt to investigate what components of these structures interests me and to allow space for them to transform, interfere and re-inform one another through their translation into components of drawings and sound pieces.</p>
 ];
 
-export class PatternOne extends Component {
+export class PatternTwo extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -38,7 +38,7 @@ export class PatternOne extends Component {
       .then(response => {
         const data = response.data;
         this.setState({
-          images: data[0]
+          images: data[1]
         });
       });
   }
@@ -48,10 +48,10 @@ export class PatternOne extends Component {
       <ProjectContainer title="drawing desk">
         <ProjectGallery images={this.state.images}/>
         <audio className="full-width room-bottom" controls>
-          <source src="app/assets/audio/pattern001.mp3" type="audio/mpeg"/>
+          <source src="app/assets/audio/pattern002.mp3" type="audio/mpeg"/>
         </audio>
         <ProjectDescription bullets={bullets} description={description}/>
-        <img className="img-responsive" src="app/assets/images/projects/projects-6.jpg"/>
+        <img className="img-responsive" src="app/assets/images/pattern/pattern-002-install.jpg"/>
       </ProjectContainer>
     );
   }

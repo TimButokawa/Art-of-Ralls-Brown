@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 
 export class ProjectGallery extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -11,14 +10,21 @@ export class ProjectGallery extends Component {
   }
 
   handleSelectImage(image) {
+    this.props.images.forEach(image => {
+      image.isSelected = false;
+    });
+
+    image.isSelected = true;
     this.setState({
       selectedImage: image
     });
   }
 
   componentWillReceiveProps(nextProps) {
+    const image = nextProps.images[0];
+    image.isSelected = true;
     this.setState({
-      selectedImage: nextProps.images[0]
+      selectedImage: image
     });
   }
 
@@ -28,7 +34,7 @@ export class ProjectGallery extends Component {
         <div className="col-sm-6 col-xs-12 sm-room-bottom">
           <div>
             <img className="img-responsive room-bottom" src={this.state.selectedImage.src}/>
-            <span>{this.state.selectedImage.caption}</span>
+            <span><strong>{this.state.selectedImage.title}</strong> | {this.state.selectedImage.caption}</span>
           </div>
         </div>
         <div className="col-sm-6 col-xs-12">
@@ -54,9 +60,17 @@ class Images extends Component {
   }
 
   render() {
+    let activeImage;
+    if (this.props.image.isSelected) {
+      activeImage = {
+        border: '2px solid #5aadbb',
+        borderRadius: '1px'
+      };
+    }
+
     return (
-      <div onClick={this.handleOnClick} className="col-xs-3">
-        <img className="img-responsive room-bottom" src={this.props.src}/>
+      <div className="col-xs-3">
+        <img style={activeImage} className="img-responsive room-bottom cursor-pointer" onClick={this.handleOnClick} src={this.props.src}/>
       </div>
     );
   }
