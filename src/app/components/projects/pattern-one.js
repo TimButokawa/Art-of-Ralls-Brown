@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-
 import {ProjectContainer} from './project-container';
 import {ProjectDescription} from './project-description';
 import {ProjectGallery} from './project-gallery';

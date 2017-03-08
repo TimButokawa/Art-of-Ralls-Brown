@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-
 import {Project} from './project';
 
 export class Projects extends Component {
