@@ -13,7 +13,7 @@ export class Projects extends Component {
 
   componentDidMount() {
     axios
-      .get('app/components/projects/projects.json')
+      .get('app/assets/data/projects.json')
       .then(response => {
         this.setState({
           projects: response.data

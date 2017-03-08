@@ -34,7 +34,7 @@ export class PatternOne extends Component {
 
   componentDidMount() {
     axios
-      .get('app/components/projects/pattern-images.json')
+      .get('app/assets/data/pattern-images.json')
       .then(response => {
         const data = response.data;
         this.setState({
