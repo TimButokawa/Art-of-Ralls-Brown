@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
+import axios from 'axios';
+
 import {ProjectContainer} from './project-container';
 import {ProjectDescription} from './project-description';
-import axios from 'axios';
+import {ProjectGallery} from './project-gallery';
 
 const bullets = [
   {
@@ -40,10 +42,12 @@ export class PatternOne extends Component {
   render() {
     return (
       <ProjectContainer title="drawing desk">
+        <ProjectGallery images={this.state.images}/>
         <audio className="full-width room-bottom" controls>
           <source src="app/assets/audio/pattern001.mp3" type="audio/mpeg"/>
         </audio>
         <ProjectDescription bullets={bullets} description={description}/>
+        <img className="img-responsive" src="app/assets/images/projects/projects-6.jpg"/>
       </ProjectContainer>
     );
   }
